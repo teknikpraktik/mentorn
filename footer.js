@@ -13,3 +13,12 @@
   const wrapper = document.querySelector('.page-wrapper');
   if (wrapper) wrapper.appendChild(footer);
 })();
+
+// Goatcounter
+(function() {
+  const script = document.createElement('script');
+  script.dataset.goatcounter = 'https://mentorn.goatcounter.com/count';
+  script.async = true;
+  script.src = '//gc.zgo.at/count.js';
+  document.head.appendChild(script);
+})();

@@ -166,7 +166,7 @@ strong {
   margin-top: -0.75rem;
 }
 
-.step-body + .two-col {
+.step-body+.two-col {
   margin-top: -0.5rem;
 }
 
@@ -298,10 +298,10 @@ strong {
 }
 
 .role-item {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 1rem;
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .role-item .role-prompts {
@@ -766,6 +766,10 @@ strong {
   }
 
   .hero-title .large {
+    font-size: 48px;
+  }
+
+  .hero-title .brand {
     font-size: 48px;
   }
 

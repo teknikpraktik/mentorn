@@ -47,7 +47,6 @@
       <p class="step-label">Exempel</p>
       <h1 class="step-title">Ett verktyg,<br>fyra roller</h1>
       <p class="step-body">AI kan spela flera olika roller beroende på vad du behöver just nu.</p>
-
       <div class="roles-list">
         <div class="role-item">
           <p class="role-name">Roll 1: Lärare</p>
@@ -78,40 +77,52 @@
           </div>
         </div>
       </div>
-
     </div>
 
     <!-- STEG 3: DISKUSSION -->
-    <div class="step" id="step-3">
-      <p class="step-label">Agera</p>
-      <h1 class="step-title">Från hallucinerande uppslagsverk<br>till tänkare</h1>
-      <ol class="homework-list">
-        <li>Välj ett ämne du jobbar med just nu</li>
-        <li>Fråga AI:
-          <span class="ai-prompt">Förklara [ämne] kortfattat.</span>
-        </li>
-        <li>Fråga AI:
-          <span class="ai-prompt">Ställ mig tre frågor om [ämne] som tvingar mig att tänka själv, inte bara återge
-            fakta.</span>
-        </li>
-        <li>Svara på frågorna. Notera skillnaden. I steg 2 fick du information, i steg 3 utvecklades din förståelse. </li>
-      </ol>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Hur använder du AI idag? <br>Använder du AI som något mer än ett hallucinerande uppslagsverk?</p>
+      <ul class="discussion-list">
+        <li>Lärare (för att förstå bättre)</li>
+        <li>Coach (för att förbättra ditt arbete)</li>
+        <li>Examinator (för att testa dig själv)</li>
+        <li>Djävulens advokat (för att utmana ditt tänkande)</li>
+      </ul>
     </div>
 
-    <!-- STEG 4: UPPGIFT -->
+    <!-- STEG 4: AGERA -->
     <div class="step" id="step-3">
       <p class="step-label">Agera</p>
-      <h1 class="step-title">AI: Från uppslagsverk<br> till lärare</h1>
+      <h1 class="step-title">Testa alla<br>fyra roller</h1>
       <ol class="homework-list">
-        <li>Välj ett område du nyligen haft svårt att förstå</li>
-        <li>Fråga AI:
-          <span class="ai-prompt">Förklara [ämne] på en nivå som passar en elev i [årskurs]. Använd exempel.</span>
+        <li>Välj ett ämne du jobbar med just nu och använd det genom alla fyra steg.</li>
+        <li>Lärare – förstå:
+          <span class="ai-prompt">Förklara [ämne] med ett konkret exempel.</span>
         </li>
-        <li>Fråga AI:
-          <span class="ai-prompt">Agera som en examinator och förstärk mitt lärande. Testa mig på [ämne]. Ställ fem
-            frågor och berätta vad jag behöver öva mer på.</span>
+        <li>Examinator – testa dig själv:
+          <span class="ai-prompt">Testa mig på [ämne] med tre frågor. Vänta på mina svar innan du går vidare.</span>
         </li>
-        <li>Notera skillnaden i användning - den första frågan gav dig information, den andra frågan gav dig en lärare.
+        <li>Coach – förbättra:
+          <span class="ai-prompt">Här är mitt svar på en av frågorna: [klistra in]. Vad är svagt och vad saknas?</span>
+        </li>
+        <li>Djävulens advokat – utmana:
+          <span class="ai-prompt">Argumentera emot det jag just skrev. Vad missar jag?</span>
         </li>
       </ol>
     </div>

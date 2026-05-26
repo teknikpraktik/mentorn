@@ -727,18 +727,19 @@ strong {
 .footer-copy {
   font-size: var(--text-sm);
   color: var(--color-text-secondary);
+  margin-top: 0.75rem;
 }
 
 .footer-contact {
   font-size: var(--text-sm);
-  color: var(--color-text-secondary);
-  font-style: italic;
+  color: #185FA5;
+  font-style: normal;
   text-decoration: none;
   transition: color 0.15s;
 }
 
 .footer-contact:hover {
-  color: var(--color-text-primary);
+  color: #0C447C;
 }
 
 /* ─── Responsive ─── */

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iterativt tänkande – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Iterativt tänkande</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Iterativt<br>tänkande</h1>
+      <p class="step-body">Det finns två sätt att ta sig an ett projekt:</p>
+      <ul class="step-body" style="padding-left: 2rem;">
+        <li><em>Linjärt</em> = planera allt i förväg, genomför steg för steg, inga ändringar förrän klart</li>
+        <li><em>Iterativt</em> = gör en första version snabbt, testa, förbättra, upprepa</li>
+      </ul>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Linjärt</p>
+          <p class="card-body">Planerar allt innan start<br>Testar bara i slutet<br>Svårt att ändra kurs<br>Misslyckas
+            sent och dyrt</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Iterativt</p>
+          <p class="card-body">Planerar lite – testar tidigt<br>Lär av varje försök<br>Justerar
+            kontinuerligt<br>Misslyckas tidigt och billigt</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma uppgift<br>Olika approach</h1>
+      <p class="step-body">Moa och Erik ska skriva ett längre PM. De är lika språkligt begåvade, men deras approach är
+        helt olika.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Moa – linjärt</p>
+          <p class="card-body">Planerar strukturen noggrant<br>Skriver hela texten utan feedback<br>Lämnar in – stora
+            ändringar krävs<br>Måste skriva om halva texten</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Erik – iterativt</p>
+          <p class="card-body">Skriver en grov inledning snabbt<br>Visar läraren och får feedback tidigt<br>Justerar
+            riktningen innan han fortsätter<br>Lämnar in – minimala ändringar</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Det är bättre att upptäcka fel tidigt än sent. Testa tidigt, justera ofta.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Hur kan du tillämpa iterativt tänkande när du skriver prov?</p>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Iterera</h1>
+      <p class="step-body">Rita ett djur eller ett fordon i tre cykler. Börja grovt och förfina steg för steg.</p>
+      <ol class="homework-list" style="padding-left: 3rem">
+        <li>Rita med bara grundformer – cirklar, rektanglar, linjer. 1 minut.</li>
+        <li>Förbättra. Behåll grundformen, lägg till detaljer. 1 minut.</li>
+        <li>Förbättra igen. Lägg till något som ger karaktär – skugga, rörelse eller ett uttryck. 1 minut.</li>
+      </ol>
+      <img src="../bilder/iterativt-tankande.png" alt="Iterativt tänkande i tre cykler"
+        style="width: 100%; margin-top: 1.5rem;">
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

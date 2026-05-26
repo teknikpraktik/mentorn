@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mål vs system – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo eyebrow" href="../index.html">mentorn.se</a>
+      <span class="concept-name">Mål vs system</span>
+      <span class="step-counter" id="step-counter">1 / 4</span>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Mål vs<br>system</h1>
+      <p class="step-body">Alla har mål. Få når dem. Problemet är inte ambition – det är strategin.</p>
+      <p class="step-body">Ett <b>mål</b> är ett resultat du vill uppnå. Ett <b>system</b> är det du gör varje dag för att ta dig dit.</p>
+      <p class="step-body">Forskning visar att personer som fokuserar på processen presterar bättre över tid. Målet ger riktning, men systemet ger framsteg.</p>
+      <p class="step-body">Du når inte dina mål genom att vilja dem mer. Du når dem genom vanor som gör framsteg oundvikliga.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Mål</p>
+          <p class="card-title">Resultattänk</p>
+          <p class="card-body">Fokus på slutpunkten<br>Motivationen varierar<br>Lyckas eller misslyckas<br>Stannar när målet nås</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">System</p>
+          <p class="card-title">Processtänk</p>
+          <p class="card-body">Fokus på vardagen<br>Motivationen byggs in<br>Varje dag är en vinst<br>Fortsätter efter målet</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma mål<br>Olika system</h1>
+      <p class="step-body">Två elever vill bli bättre på engelska. Båda sätter upp målet att klara provet med högt betyg. Men deras vardag ser helt olika ut.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Elev A</p>
+          <p class="card-body">Tänker på målet varje dag<br>Pluggar intensivt inför prov<br>Tappar motivationen däremellan<br>Beror på dagsformen</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Elev B</p>
+          <p class="card-body">Lyssnar på engelsk podcast dagligen<br>Skriver tre meningar varje kväll<br>Märker knappt att hon tränar<br>Förbättras konstant</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Elev A vill nå målet. Elev B har byggt ett system.</p>
+        <p>Du behöver inte mer motivation – du behöver bättre rutiner.</p>
+        <p>Ett system som fungerar på dåliga dagar är starkare än ett mål på bra dagar.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Har du ett mål du inte kommit närmare? Hur skulle ett konkret dagligt system kunna se ut för att nå målet?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Designa ditt system</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Skriv ner ett mål du har just nu.</li>
+          <li>Skriv ner en konkret sak du kan göra <b>varje dag</b> för att jobba mot målet.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

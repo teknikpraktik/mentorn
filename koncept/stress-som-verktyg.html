@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stress som verktyg – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Stress som verktyg</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Stress som<br>verktyg</h1>
+      <p class="step-body">Stress har dåligt rykte. Men forskning visar att stress inte nödvändigtvis är farlig. Din syn
+        på stress kan avgöra hur den påverkar dig. Kortvarig stress inför något viktigt kan hjälpa dig prestera.
+        Långvarig stress utan återhämtning är däremot skadlig.</p>
+      <p class="step-body"><em>Distress</em> är kronisk och överväldigande, den är skadlig.
+        <br><em>Eustress</em> är positiv stress inför en utmaning du tror att du kan klara.
+      </p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Distress</p>
+          <p class="card-body">Kronisk och överväldigande<br>Kroppen alltid på helspänn<br>Stör sömn och
+            koncentration<br>Leder till utmattning</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Eustress</p>
+          <p class="card-body">Kortvarig och uppgiftsrelaterad<br>Ökar fokus och energi<br>Motiverar till
+            handling<br>Följs av återhämtning</p>
+        </div>
+      </div>
+      <img src="../bilder/yerkes_dodson.png"
+        alt="Yerkes-Dodson-kurvan visar att optimal prestation nås vid måttlig stressnivå"
+        style="width: 100%; margin-top: 2rem;">
+
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma prov<br>Olika stress</h1>
+      <p class="step-body">Emil och Sofia har prov imorgon. Båda känner exakt samma sak i kroppen – men deras tolkning
+        är helt olika.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Emil</p>
+          <p class="card-body">Jag är stressad – jag misslyckas<br>Hjärtat slår snabbt = ett hot<br>Fokuset splittras
+            av oro<br>Presterar under sin förmåga</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Sofia</p>
+          <p class="card-body">Kroppen gör mig redo<br>Hjärtat slår snabbt = energi<br>Fokuset skärps, jag är
+            alert<br>Kan använda energin bättre</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Emil och Sofia kände samma stressreaktion i kroppen. Samma puls. Samma stress. Olika tolkning → olika
+          prestation.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Tänk på en situation du brukar bli stressad i – är det distress eller eustress?</p>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Byt berättelsen</h1>
+      <ol class="homework-list">
+        <li>Skriv ner en situation där du brukar bli stressad (prov, presentation, tävling).</li>
+        <li>Fråga AI:
+          <span class="ai-prompt">Jag brukar bli stressad inför [situation].
+            Hur kan jag se nervositeten som ett tecken på att kroppen gör sig redo, istället för att något är
+            fel?</span>
+        </li>
+      </ol>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

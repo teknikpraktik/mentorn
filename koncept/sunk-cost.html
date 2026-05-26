@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunk cost – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Sunk cost</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Sunk cost</h1>
+      <p class="step-body">Du har lagt tre timmar på att läsa ett kapitel. Du förstår fortfarande inte. Vad gör du?</p>
+      <p class="step-body">De flesta fortsätter, för att de redan lagt så mycket tid.</p>
+
+      <p class="step-body">Detta kallas <em>sunk cost</em>:
+        att fortsätta bara för att du redan lagt tid på det. Det du lagt ner är borta
+        oavsett vad du gör nu. Det enda som spelar roll är vad som ger bäst resultat härifrån.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Fastnad i sunk cost</p>
+          <p class="card-body">Fortsätter för att du lagt tid<br>Byter inte strategi<br>Kastar mer tid på fel
+            saker<br>Kan göra det bra, men gör fel sak</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Fri från sunk cost</p>
+          <p class="card-body">Märker när något inte fungerar<br>Byter strategi istället för att nöta<br>Tänker på
+            resultat, inte nedlagd tid<br>Fokuserar på att förstå</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma mål<br>Fel lojalitet</h1>
+      <p class="step-body">Karin har pluggat på ett ämne i två veckor med samma metod. Det fungerar inte, men hon
+        fortsätter. Filip inser efter tre dagar att hans approach inte fungerar och byter utan att tveka.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Karin</p>
+          <p class="card-body">Fortsätter läsa passivt<br>"Jag har redan lagt så mycket tid"<br>Samma metod – sämre
+            resultat<br>Provet går dåligt</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Filip</p>
+          <p class="card-body">Inser att det inte fungerar<br>"Vad skulle fungera bättre?"<br>Ny metod – snabb
+            förbättring<br>Provet går bra</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Karin jobbar lika hårt som Filip. Men hon är lojal mot sin investering, inte mot sitt mål.</p>
+      </div>
+    </div>
+
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Vilka pluggmetoder är förmodligen sunk cost?</p>
+    </div>
+
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Byt lojalitet</h1>
+      <ol class="homework-list">
+        <li>Beskriv en pluggmetod du använder som du egentligen inte tror på</li>
+        <li>Skriv ner vad du skulle testa istället om du startade om från noll idag</li>
+      </ol>
+    </div>
+
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

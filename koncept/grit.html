@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grit – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Grit</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Grit</h1>
+      <p class="step-body">Vad skiljer de som når långt från de som inte gör det?</p>
+      <p class="step-body">Psykologen Angela Duckworth fann att den avgörande faktorn varken var IQ eller talang. Det
+        var <em>grit</em> – kombinationen av passion och uthållighet för långsiktiga mål. Grit går att träna.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan grit</p>
+          <p class="card-body">Ger upp när det blir svårt<br>Hoppar mellan intressen<br>Söker genvägar<br>Låter känslan
+            styra</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med grit</p>
+          <p class="card-body">Fortsätter trots motgångar<br>Håller fast vid ett fokus<br>Accepterar att det tar
+            tid<br>Låter syftet styra</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Talang räcker<br>inte</h1>
+      <p class="step-body">Anton och Linn börjar på samma gymnasieprogram. Anton är klart mest talangfull. Linn är
+        genomsnittlig men envis. Tre år senare är det Linn som sticker ut.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Anton</p>
+          <p class="card-body">Förlitar sig på sin talang<br>Anstränger sig inte när det är svårt<br>Tappar intresset
+            snabbt<br>Presterar under sin potential</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Linn</p>
+          <p class="card-body">Dyker upp även när motivationen är låg<br>Fortsätter även när hon misslyckas<br>Ser
+            motgång som
+            en del av processen<br>Når längre än alla förväntade sig</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Talang utan ansträngning är bara potential. Långsiktig utveckling kräver att du står kvar längre än känslan
+          säger åt dig att göra.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Finns det något du håller på att ge upp på just nu?
+        <br> Vad krävs för att du ska fortsätta?
+      </p>
+    </div>
+
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">När du vill ge upp</h1>
+
+      <ol class="homework-list">
+        <li>Tänk på något du håller på att ge upp på just nu.</li>
+
+        <li>Berätta för AI vad det är och varför det känns svårt:
+          <span class="ai-prompt">Jag håller på att ge upp på [område] eftersom [anledning]. Hjälp mig förstå varför jag
+            fastnat och ge mig ett litet nästa steg som gör det lättare att fortsätta.</span>
+        </li>
+
+        <li>Fråga sedan:
+          <span class="ai-prompt">Ge mig tre konkreta saker jag kan göra den här veckan för att ta ett litet steg
+            framåt, utan att det känns överväldigande.</span>
+        </li>
+
+        <li>Välj en av de tre sakerna och gör det idag.</li>
+      </ol>
+    </div>
+
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

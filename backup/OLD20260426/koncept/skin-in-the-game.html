@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin in the game – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Skin in the game</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Skin in<br>the game</h1>
+      <p class="step-body">Det är lätt att ge råd om saker du inte själv riskerar något på. Det är svårare – och mer meningsfullt – när du har något på spel.</p>
+      <p class="step-body"><b>Skin in the game</b> (Nassim Taleb): verkligt ansvar uppstår när du delar riskerna med konsekvenserna av dina beslut. Ägandeskap är inte skuld. Det är makt.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan ägandeskap</p>
+          <p class="card-body">Skyller på läraren och schemat<br>Tar inte ansvar för resultaten<br>Engagemanget är lågt<br>Lärandet är ytligt</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med ägandeskap</p>
+          <p class="card-body">Äger sina val och konsekvenser<br>Frågar "vad kan jag göra annorlunda?"<br>Engagemanget ökar<br>Lärandet är på riktigt</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma resultat<br>Olika ägarskap</h1>
+      <p class="step-body">Pontus och Rebecka underpresterar på ett prov. Läraren har kanske förklarat dåligt – det stämmer för båda. Men deras reaktioner leder dem åt helt olika håll.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Pontus</p>
+          <p class="card-body">"Läraren förklarade dåligt"<br>"Provet var orättvist"<br>Väntar på att omständigheterna ändras<br>Resultaten förblir desamma</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Rebecka</p>
+          <p class="card-body">"Vad kunde jag gjort annorlunda?"<br>"Hur pluggar jag smartare nästa gång?"<br>Tar ansvar för det hon kan påverka<br>Resultaten förbättras gradvis</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Du kan inte kontrollera allt – men alltid ditt svar på det som händer. Ägandeskap är inte skuld. Det är makt.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Finns det något i skolan du brukar skylla på yttre faktorer – vad händer om du tar fullt ägandeskap?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Ta ägandeskap</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Skriv ner något i skolan som inte fungerar och som du brukar skylla på yttre faktorer</li>
+          <li>Skriv ner tre konkreta saker du själv kan göra för att förändra situationen – utan att skylla på någon annan</li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

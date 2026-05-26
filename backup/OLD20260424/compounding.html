@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compounding – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo eyebrow" href="../index.html">mentorn.se</a>
+      <span class="concept-name">Compounding</span>
+      <span class="step-counter" id="step-counter">1 / 4</span>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Compounding</h1>
+      <p class="step-body">Föreställ dig att du förbättras med bara 1% varje dag. Det låter litet. Men efter ett år är du nästan <b>37 gånger</b> bättre.</p>
+      <p class="step-body"><b>Compounding</b> innebär att små förbättringar bygger på varandra exponentiellt. Det gäller inte bara pengar – det gäller kunskap, färdigheter och vanor.</p>
+      <p class="step-body">Problemet: compounding syns inte i början. Det är därför de flesta ger upp för tidigt.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan compounding-tänk</p>
+          <p class="card-body">Ger upp när det ser smått ut<br>Söker snabba resultat<br>Hoppar mellan aktiviteter<br>Missar den exponentiella kurvan</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med compounding-tänk</p>
+          <p class="card-body">Fortsätter trots att det ser smått ut<br>Litar på processen<br>Bygger på samma grund varje dag<br>Ser stora resultat på sikt</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Tio sidor<br>om dagen</h1>
+      <p class="step-body">Ella och Max vill bli bättre på att skriva. Ella bestämmer sig för att läsa tio sidor varje dag. Max väntar på inspiration och läser ibland hundra sidor – men inte varje dag.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Max</p>
+          <p class="card-body">Läser oregelbundet – ibland mycket.<br>Känner att tio sidor inte spelar roll.<br>Läser totalt 20 böcker på ett år.<br>Förbättringen platåar.</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Ella</p>
+          <p class="card-body">Läser tio sidor varje dag.<br>10 sidor × 365 dagar = 12 böcker.<br>Varje bok bygger på den förra.<br>Om tre år är skillnaden enorm.</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Ellas tio sidor kändes obetydliga. Men konsekvens skapade compounding.</p>
+        <p>Det du gör varje dag är viktigare än det du gör ibland.</p>
+        <p>Börja litet. Börja idag. Håll fast.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Om du förbättrade dig 1% om dagen inom ett område – vad skulle det innebära om ett år?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Starta kedjan</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Välj något du vill bli bättre på och bestäm en <b>minimiinsats</b> – något så litet att du kan göra det varje dag.</li>
+          <li>Gör det idag.</li>
+          <li>Bocka av det i kalendern – och bygg kedjan dag för dag.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternativkostnad – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Alternativkostnad</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Alternativ-<br>kostnad</h1>
+      <p class="step-body">Varje val du gör kostar något – inte bara pengar, utan tid, energi och möjligheter.</p>
+      <p class="step-body"><em>Alternativkostnad</em> är värdet av det bästa alternativet du väljer bort. Kloka
+        beslutsfattare ser inte bara vad de vinner, de ser också vad de förlorar.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan alternativtänk</p>
+          <p class="card-body">Ser bara det du får<br>Fattar impulsiva beslut<br>Ångrar tid och pengar<br>Förstår inte
+            varför inget förändras</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med alternativtänk</p>
+          <p class="card-body">Ser vad du väljer bort<br>Fattar medvetna val<br>Prioriterar det som spelar
+            roll<br>Väljer aktivt hur du spenderar din tid</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">En timme<br>Tre val</h1>
+      <p class="step-body">Wilma har en ledig timme och väljer att scrolla. Hon ser det som gratis avkoppling, men
+        glömmer alternativkostnaden.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Vad Wilma ser</p>
+          <p class="card-body">En timme av avkoppling<br>Koll på vad kompisar gör<br>Det känns som ett gratis
+            val<br>Valet sker på autopilot</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Alternativkostnaden</p>
+          <p class="card-body">Läxan hade kunnat vara klar<br>Kvällen hade blivit friare<br>En powernap hade gett mer
+            energi<br>Hon hade känt sig mer i kontroll</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Att inte välja är också ett val. Fråga dig: vad offrar jag när jag väljer det här?</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Är det något du lägger mycket tid, pengar eller energi på just nu? Vad offrar du för det
+        valet?
+      </p>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Vad kostar beslutet?</h1>
+      <ol class="homework-list">
+        <li>Tänk på ett beslut du har framför dig just nu, stort eller litet.</li>
+        <li>Öppna AI-chatten och skriv:
+          <span class="ai-prompt">Jag överväger att [beskriv beslutet]. Hjälp mig se alternativkostnaden. Vad offrar jag
+            egentligen om jag väljer detta?</span>
+        </li>
+        <li>Ser du beslutet annorlunda nu?</li>
+      </ol>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

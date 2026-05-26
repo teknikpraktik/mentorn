@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parkinsons lag – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Parkinsons lag</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Parkinsons lag</h1>
+      <p class="step-body">Har du märkt att en uppgift alltid tar precis så lång tid som du har på dig?</p>
+      <p class="step-body"><b>Parkinsons lag</b>: arbete expanderar för att fylla den tid som finns tillgänglig. Lösningen är enkel: sätt kortare, konstgjorda deadlines.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">För mycket tid</p>
+          <p class="card-body">Skjuter upp starten<br>Perfektionerar i oändlighet<br>Tappar fokus och trådar<br>Levererar i sista sekunden</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Begränsad tid</p>
+          <p class="card-body">Börjar direkt<br>Fattar snabba beslut<br>Fokuserar på det väsentliga<br>Levererar i tid – ofta bättre</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">En vecka<br>En timme</h1>
+      <p class="step-body">Sara och Leo får samma uppgift. Sara ger sig en vecka. Leo sätter en timme. Resultatet är nästan identiskt – men upplevelsen är helt olika.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Sara – en vecka</p>
+          <p class="card-body">Skjuter upp i fem dagar<br>Stressar de sista timmarna<br>Skriver om samma mening tolv gånger<br>Lämnar in sen och utmattad</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Leo – en timme</p>
+          <p class="card-body">Börjar direkt – ingen tid att tveka<br>Skriver klart på 45 minuter<br>Läser igenom en gång och lämnar in<br>Spenderar resten av kvällen fritt</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Mer tid gav inte Sara ett bättre referat – bara mer stress. Sätt en kortare deadline än du tror att du behöver.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Känner du igen dig i att uppgifter tar längre tid än de borde – vad tror du är anledningen?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Halvera din tid</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Ta fram en uppgift du ska göra den närmaste veckan</li>
+          <li>Uppskatta hur lång tid du tror att den tar</li>
+          <li>Fråga AI: <i>"Använd Parkinsons lag och hjälp mig sätta en tight deadline för [uppgift]. Bryt sedan ner den i fokusblock om 25 minuter."</i></li>
+          <li>Håll dig till planen</li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

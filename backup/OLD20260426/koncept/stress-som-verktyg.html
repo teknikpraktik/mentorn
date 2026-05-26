@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stress som verktyg – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Stress som verktyg</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Stress som<br>verktyg</h1>
+      <p class="step-body">Stress har dåligt rykte. Men forskning visar att stress inte är farlig – det är din syn på stress som avgör hur den påverkar dig.</p>
+      <p class="step-body"><b>Eustress</b> är positiv stress inför en utmaning du tror att du kan klara. Den skärper fokus. <b>Distress</b> är kronisk och överväldigande – den är skadlig. Du väljer hur du tolkar det du känner.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Distress</p>
+          <p class="card-body">Kronisk och överväldigande<br>Kroppen alltid på helspänn<br>Stör sömn och koncentration<br>Leder till utmattning</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Eustress</p>
+          <p class="card-body">Kortvarig och uppgiftsrelaterad<br>Ökar fokus och energi<br>Motiverar till handling<br>Följs av återhämtning</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma prov<br>Olika stress</h1>
+      <p class="step-body">Emil och Sofia har prov imorgon. Båda känner exakt samma sak i kroppen – men deras tolkning är helt olika.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Emil</p>
+          <p class="card-body">"Jag är stressad – jag misslyckas"<br>Hjärtat slår snabbt – ett hot<br>Fokuset splittras av oro<br>Presterar under sin förmåga</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Sofia</p>
+          <p class="card-body">"Kroppen gör mig redo"<br>Hjärtat slår snabbt – energi<br>Fokuset skärps, hon är alert<br>Presterar på toppen av sin förmåga</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Emil och Sofia kände exakt samma sak. Men tolkningen var allt. Stress är inte problemet – din relation till stress är.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Tänk på en situation du brukar bli stressad i – är det eustress eller distress?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Byt berättelsen</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Tänk på något kommande som känns stressande</li>
+          <li>Fråga AI: <i>"Jag är stressad inför [X]. Hjälp mig använda stress som ett verktyg – är det prestationsstress som kan hjälpa mig eller negativ stress som bromsar, och vad gör jag i varje fall?"</i></li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

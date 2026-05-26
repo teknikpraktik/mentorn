@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stoicism – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display:flex;align-items:center;gap:0.5rem;">
+        <span class="concept-name">Stoicism</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+
+    <!-- STEG 1: KONCEPT -->
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Stoicism</h1>
+      <p class="step-body">Stoikerna, en grupp filosofer i antikens Grekland och Rom, byggde hela sitt tänkande kring en
+        enkel sortering: det som är <em>inom din kontroll</em> och det som är <em>utanför din kontroll</em>.</p>
+      <p class="step-body">Filosofen Epiktetos formulerade det så här: du kan inte kontrollera vad som händer dig, men
+        du kan alltid kontrollera hur du förhåller dig till det.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utanför din kontroll</p>
+          <p class="card-body">Andras åsikter<br>Exakta resultat<br>Slumpen<br>Vad andra gör</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Inom din kontroll</p>
+          <p class="card-body">Ditt förhållningssätt<br>Dina förberedelser<br>Dina beslut<br>Dina handlingar</p>
+        </div>
+
+      </div>
+      <p class="step-body">Stoicismen handlar inte om att bli likgiltig. Det handlar om att lägga din energi där den gör
+        skillnad.</p>
+    </div>
+
+    <!-- STEG 2: EXEMPEL -->
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Inför en<br>presentation</h1>
+      <p class="step-body">Du ska hålla en presentation i klassen och är nervös. Vad kan du faktiskt påverka?</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utanför din kontroll</p>
+          <p class="card-body">Om klassen tycker det är intressant<br>Om läraren är på bra humör<br>Om någon
+            skrattar<br>Hur andra presterar</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Inom din kontroll</p>
+          <p class="card-body">Hur väl du förbereder dig<br>Hur du andas innan du börjar<br>Vad du gör om du tappar
+            tråden<br>Din inställning</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Stoikern lägger all energi på saker inom sin kontroll, och slutar aktivt oroa sig för saker han eller hon
+          inte kan påverka. Oro om det okontrollerbara är slöseri med mental kapacitet.</p>
+      </div>
+    </div>
+
+    <!-- STEG 3: DISKUSSION -->
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Finns det något du oroar dig för just nu som du egentligen inte kan påverka?</p>
+    </div>
+
+    <!-- STEG 4: UPPGIFT -->
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Sortera det<br>som stressar dig</h1>
+      <ol class="homework-list">
+        <li>Välj en situation i ditt liv där du känner dig pressad eller maktlös. Beskriv den kortfattat för AI:n och
+          be
+          den hjälpa dig sortera:
+          <span class="ai-prompt">Jag känner mig stressad över [situation]. Hjälp mig dela upp det i två listor: vad
+            som
+            är inom min kontroll och vad som är utanför min kontroll.</span>
+        </li>
+        <li>Skriv ner <b>en</b> konkret sak du kan göra idag från listan med saker inom din kontroll.</li>
+      </ol>
+    </div>
+
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

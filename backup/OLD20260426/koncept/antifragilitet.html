@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antifragilitet – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Antifragilitet</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Anti-<br>fragilitet</h1>
+      <p class="step-body">Visste du att det finns saker som inte bara tål motgångar – utan faktiskt blir <b>starkare</b> av dem?</p>
+      <p class="step-body">Nassim Nicholas Taleb myntade begreppet <b>antifragilitet</b>. Sköra saker går sönder. Robusta saker överlever. Antifragila saker förbättras under press. Din kropp är antifragil – lyft vikter och musklerna växer.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Fragil</p>
+          <p class="card-body">Undviker svåra situationer<br>Skyddas från motgångar<br>Går sönder under press<br>Kräver stabilitet</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Antifragil</p>
+          <p class="card-body">Söker lagom svåra utmaningar<br>Lär sig av misslyckanden<br>Blir starkare av motgångar<br>Trivs i osäkra miljöer</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Underkänt<br>som startpunkt</h1>
+      <p class="step-body">Lova och Filip underkänns på ett prov. Jobbigt för båda – men vad de gör med det avgör allt.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Filip</p>
+          <p class="card-body">Skäms och gömmer provet<br>Undviker att tänka på felen<br>Försöker glömma det snabbt<br>Gör samma misstag nästa prov</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Lova</p>
+          <p class="card-body">Besviken – men nyfiken på vad som hände<br>Analyserar varje fel noggrant<br>Förstår varför och justerar strategin<br>Nästa prov – starkt förbättrad</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Motgång är information. Frågan är om du väljer att läsa den.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Finns det ett misslyckande du haft som faktiskt lärde dig något viktigt?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Analysera ett misslyckande</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Skriv ner ett misslyckande eller motgång du upplevt nyligen</li>
+          <li>Skriv ner <b>tre saker</b> du lärde dig av det</li>
+          <li>Skriv ner vad du ska göra annorlunda nästa gång</li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

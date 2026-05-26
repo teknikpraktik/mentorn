@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo eyebrow" href="../index.html">mentorn.se</a>
+      <span class="concept-name">Pomodoro</span>
+      <span class="step-counter" id="step-counter">1 / 4</span>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Pomodoro</h1>
+      <p class="step-body">Din hjärna är inte byggd för att fokusera i timmar. Den är byggd för korta, intensiva perioder – följt av återhämtning.</p>
+      <p class="step-body">Tekniken är enkel: arbeta <b>fokuserat i 25 minuter</b>, ta sedan <b>5 minuters paus</b>. Upprepa. Efter fyra rundor tar du en längre paus.</p>
+      <p class="step-body">Under de 25 minuterna gör du <b>bara en sak</b>. Ingen telefon. Inga notiser. Bara arbetet.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan pomodoro</p>
+          <p class="card-body">Jobbar tills fokus tryter<br>Kollar telefonen hela tiden<br>Vet inte hur lång tid det tar<br>Utmattad – ändå oklar</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med pomodoro</p>
+          <p class="card-body">Arbetar i avgränsade block<br>Telefonen borta under blocket<br>Spårar hur lång tid det tar<br>Pauser inbyggda och välförtjänta</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Tre timmar<br>Inget gjort</h1>
+      <p class="step-body">Kalle ska skriva en uppsats. Han sätter sig vid datorn klockan 17 och lovar sig att jobba tills den är klar.</p>
+      <p class="step-body">Tre timmar senare har han knappt skrivit ett stycke. Han kollade Instagram "bara en sekund", läste igenom texten om och om igen och kände sig till slut så överväldigad att han gav upp.</p>
+      <p class="step-body">Med pomodoro hade han satt timern, skrivit inledningen under första blocket och tagit en kort paus. Två timmar senare hade uppsatsen varit klar.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Kalles kväll</p>
+          <p class="card-body">Kollar Instagram "bara en sekund"<br>Läser igenom texten om och om igen<br>Känner sig överväldigad<br>Ger upp och tittar på Youtube</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med pomodoro</p>
+          <p class="card-body">Sätter timern: skriver inledningen<br>Tar 5 min paus – utan skärm<br>Nästa block: startar direkt<br>Efter två timmar är uppsatsen klar</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Problemet var inte Kalles vilja – det var avsaknaden av struktur. 25 minuter är tillräckligt kort för att börja, men tillräckligt långt för att nå framsteg. Pomodoro gör det omöjligt att skjuta upp – du börjar bara nästa block.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">När brukar du tappa fokus när du pluggar – och vad distraherar dig mest?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Testa det ikväll</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Ladda ner en pomodoro-app (t.ex. <b>Forest</b> eller <b>Focus Keeper</b>)</li>
+          <li>Välj en läxa du ska göra ikväll</li>
+          <li>Sätt timern på 25 min, lägg undan telefonen och börja</li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

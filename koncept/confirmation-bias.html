@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation bias – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Confirmation bias</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Confirmation<br>bias</h1>
+      <p class="step-body">Hjärnan är lat av energiskäl. Den föredrar att bekräfta det du redan tror framför att ifrågasätta det.</p>
+      <p class="step-body">Confirmation bias betyder att du omedvetet filtrerar verkligheten så att den passar din bild av den. Det är inte ett tecken på dumhet. Det är så alla hjärnor fungerar.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Med confirmation bias</p>
+          <p class="card-body">Söker bekräftelse på det du tror<br>Ignorerar information som motsäger dig<br>Känner dig säker men har svag grund<br>Lär dig ingenting nytt</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Utan confirmation bias</p>
+          <p class="card-body">Söker aktivt motargument<br>Väger information från båda håll<br>Känner dig osäker men har stark grund<br>Uppdaterar din bild av verkligheten</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma fråga<br>Olika sökning</h1>
+      <p class="step-body">Ulf och Ludvig ska förbereda sig inför en debatt. Båda har redan en åsikt om frågan.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Ulf</p>
+          <p class="card-body">Söker bevis för att han har rätt<br>Läser källor som håller med honom<br>Hoppar över artiklar som ifrågasätter<br>Känner sig säker, men tappar debatten</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Ludvig</p>
+          <p class="card-body">Söker argument för och emot<br>Läser källor som motsäger honom<br>Hittar svagheter i sin egen ståndpunkt<br>Känner sig osäker, men vinner debatten</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Ulf och Ludvig hade samma utgångspunkt. Skillnaden var vad de letade efter.</p>
+      </div>
+    </div>
+
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Tänk på något du är övertygad om. Har du någonsin aktivt sökt argument mot din ståndpunkt?</p>
+      <p class="discussion-q">Vad händer med din åsikt om du gör det?</p>
+    </div>
+
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Utmana din<br>egen åsikt</h1>
+      <ol class="homework-list">
+        <li>Välj något du är övertygad om: en åsikt, en övertygelse eller en slutsats du dragit.</li>
+        <li>Fråga AI:
+          <span class="ai-prompt">Jag tror att [din åsikt]. Ge mig de starkaste argumenten mot denna ståndpunkt. Var konkret och ta inte hänsyn till vad jag tycker.</span>
+        </li>
+        <li>Skriv ner ett argument från svaret som faktiskt fick dig att tveka.</li>
+      </ol>
+    </div>
+
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

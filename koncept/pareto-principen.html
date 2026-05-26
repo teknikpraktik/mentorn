@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pareto-principen – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display:flex;align-items:center;gap:0.5rem;">
+        <span class="concept-name">Pareto-principen</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Pareto-principen</h1>
+      <p class="step-body">Du kan plugga i 5 timmar och ändå inte lära dig något. Allt arbete är inte lika värdefullt.
+        Vissa insatser ger stor effekt – resten fyller bara
+        tiden.</p>
+      <p class="step-body"><em>80/20-regeln</em>: ungefär 20% av dina insatser ger 80% av dina resultat. </p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">80% som ger 20%</p>
+          <p class="card-body">Läsa anteckningar passivt<br>Markera med överstrykningspenna<br>Skriva rent utan att
+            reflektera<br>Titta på föreläsningar flera gånger</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">20% som ger 80%</p>
+          <p class="card-body">Testa dig själv aktivt<br>Förklara för någon annan<br>Lösa gamla
+            provuppgifter<br>Fokusera på det du inte kan</p>
+        </div>
+      </div>
+      <p class="step-body">Nyckeln är att identifiera och prioritera de 20% som verkligen spelar roll.</p>
+    </div>
+
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Aktivitet är inte produktivitet</h1>
+      <p class="step-body">Kim pluggade fem timmar inför ett prov i historia och kände sig nöjd. Men resultatet var
+        sämre än väntat – hon hade lagt tid på fel saker.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Kims fem timmar</p>
+          <p class="card-body">Läste igenom läroboken - 2h<br>Skrev rent anteckningar - 1h<br>Markerade viktiga
+            stycken - 1h<br>Läste sina anteckningar - 1h</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Effektivare val</p>
+          <p class="card-body">Byggde mind map på innehållet - 1h<br>Testade sig utan att titta - 2h<br>Löste gamla
+            provfrågor - 1h<br>Repeterade det hon inte kunde - 1h</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Känslan av att vara duktig är inte samma sak som att bli bättre.</p>
+      </div>
+    </div>
+
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">1. Hur pluggar du faktiskt idag? Var konkret och ärlig.<br>
+        2. Hur mycket av det tror du faktiskt hjälper dig att lära dig?</p>
+    </div>
+
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Din 80/20-analys</h1>
+      <ol class="homework-list">
+        <li>Lista allt du faktiskt gör när du pluggar inför ett prov (även sådant som inte funkar så bra)</li>
+        <li>Fråga AI:
+          <span class="ai-prompt">Här är hur jag pluggar: [skriv din lista]. Vilka 20 % ger störst effekt, och vad bör
+            jag sluta göra helt?</span>
+        </li>
+        <li>Bestäm två saker du ska börja göra mer av – och en sak du ska sluta med helt</li>
+      </ol>
+    </div>
+
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

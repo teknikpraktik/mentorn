@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uppgradera din hjärna – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display:flex;align-items:center;gap:0.5rem;">
+        <span class="concept-name">Uppgradera din hjärna</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+
+    <!-- STEG 1: KONCEPT -->
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Din hjärna är inte byggd för den här världen</h1>
+      <p class="step-body">Människohjärnan utvecklades för ett lokalt och linjärt liv. Vi lever nu i en global och
+        exponentiell värld.</p>
+      <p class="step-body">Människans instinkter förändras långsamt. Tekniken förändras snabbt. Det gapet kommer forma
+        stora delar av ditt liv.</p>
+      <p class="step-body">Fyra mindsets blir särskilt viktiga i en exponentiell värld.</p>
+
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Hjärnans default</p>
+          <p class="card-body">
+            Negativitetsbias: söker hot<br>
+            Linjärt tänkande: ser inte förändring<br>
+            Bekräftelsebias: söker det du redan vet<br>
+            Externt fokus: livet händer oss
+          </p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Framtidens mindset</p>
+          <p class="card-body">
+            <b>Nyfikenhet</b>: lärandet som drivkraft<br>
+            <b>Exponentiellt tänkande</b>: förstår x<sup>2</sup><br>
+            <b>Möjlighetstänk</b>: ser nya möjligheter<br>
+            <b>Eget ansvar</b>: det är du som styr
+          </p>
+        </div>
+      </div>
+
+      <p class="step-body">Din hjärna är formbar. Det betyder att du kan träna upp dessa fyra mindsets.</p>
+    </div>
+
+    <!-- STEG 2: EXEMPEL -->
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma start<br>Olika riktning</h1>
+
+      <p class="step-body">
+        Alex och Emma börjar sina första jobb samma år. På bara några månader förändras deras arbetsplats av nya
+        AI-verktyg.
+      </p>
+
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Alex</p>
+          <p class="card-body">
+            Arbetar som vanligt<br>
+            Undviker nya verktyg<br>
+            Väntar på tydliga instruktioner<br>
+            Ser förändringen som något jobbigt
+          </p>
+        </div>
+
+        <div class="card green">
+          <p class="card-label">Emma</p>
+          <p class="card-body">
+            Testar AI direkt<br>
+            Automatiserar delar av sitt arbete<br>
+            Lär sig nya system kontinuerligt<br>
+            Ser förändringen som en möjlighet
+          </p>
+        </div>
+      </div>
+
+      <p class="step-body">
+        Första året syns nästan ingen skillnad. Fem år senare arbetar de på helt olika nivåer.
+      </p>
+    </div>
+
+    <!-- STEG 3: DISKUSSION -->
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Vilket av dessa mindsets är svårast för dig personligen?</p>
+      <ul style="margin: -1rem 0 1rem 3.5rem;" class="discussion-q">
+        <li>Nyfikenhet</li>
+        <li>Exponentiellt tänkande</li>
+        <li>Möjlighetstänk</li>
+        <li>Eget ansvar</li>
+      </ul>
+    </div>
+
+    <!-- STEG 4: UPPGIFT -->
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Din mindset-inventering</h1>
+      <ol class="homework-list">
+        <li>Fråga AI:
+          <span class="ai-prompt">Här är fyra mindsets: nyfikenhet, exponentiellt
+            tänkande, möjlighetstänk och eget ansvar. Ställ mig en fråga i taget om hur jag förhåller mig till var och en och
+            ge mig
+            sedan en ärlig bild av var jag är stark och var jag har mest att utveckla.</span>
+        </li>
+        <li>Välj det mindset du vill träna mest. Fråga AI:
+          <span class="ai-prompt">Jag vill stärka min/mitt [mindset]. Ge mig tre konkreta vanor eller övningar jag kan
+            börja
+            med den här veckan.</span>
+        </li>
+        <li>Skriv ner en sak du ska göra annorlunda från och med imorgon.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="nav-row">
+    <div class="nav-right">
+      <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+      <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

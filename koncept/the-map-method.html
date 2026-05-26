@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The map method – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">The map method</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">The map method</h1>
+      <p class="step-body">Att läsa en lärobok från pärm till pärm innebär att du börjar med detaljerna innan du har en struktur
+        att placera dem på. Hjärnan lär sig bättre om du gör tvärtom.</p>
+      <p class="step-body">Skapa alltid strukturen först. Läs rubrikerna, sammanfattningen och inledningen. Rita en
+        enkel mindmap med de huvudgrenar du ser. Läs sedan detaljerna och placera dem på din karta.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan the map method</p>
+          <p class="card-body">Börjar på sida ett<br>Läser detaljer utan sammanhang<br>Arbetsminnet
+            överbelastas<br>Minns mest
+            det du läste sist</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med the map method</p>
+          <p class="card-body">Skapar strukturen först<br>Detaljer kopplas till helheten<br>Lättare att minnas<br>Kan
+            återberätta hela ämnet</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma kapitel<br>Olika resultat</h1>
+      <p class="step-body">Allan och Manfred läser samma kapitel inför ett geografiprov. De lägger lika lång tid – men
+        resultaten skiljer sig markant.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Allan</p>
+          <p class="card-body">Börjar på sida ett<br>Läser rad för rad<br>Minns mest slutet av kapitlet<br>Ser inte hur
+            delarna hänger ihop</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Manfred</p>
+          <p class="card-body">Läser rubriker och sammanfattning<br>Ritar en mindmap med fyra grenar<br>Fyller på kartan
+            medan han läser<br>Kan återberätta hela strukturen</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Skillnaden är inte intelligens eller flit. Det är ordningen.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Läser du från pärm till pärm – eller lägger du upp det på något annat sätt?</p>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Mappa innan du läser</h1>
+      <ol class="homework-list">
+        <li>Ta ett ämne du har prov på inom kort.</li>
+        <li>Rita en mindmap med de grenar du tycker ämnet har. Det behöver inte vara rätt, det är
+          ett utkast.</li>
+        <li>Läs ett kapitel och fyll på kartan med detaljer. Justera grenarna om du hade fel.</li>
+        <li>Studera din vackra karta. Hjälper den dig att sortera och minnas informationen bättre?</li>
+      </ol>
+    </div>
+
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

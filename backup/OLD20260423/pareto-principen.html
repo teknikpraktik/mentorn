@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pareto-principen – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo eyebrow" href="../index.html">mentorn.se</a>
+      <span class="concept-name">Pareto-principen</span>
+      <span class="step-counter" id="step-counter">1 / 4</span>
+    </div>
+  </header>
+  <div class="page-wrapper">
+
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Pareto-<br>principen</h1>
+      <p class="step-body">Inte all ansträngning är lika värd. Vissa saker du gör ger oproportionerligt stor effekt – och resten fyller bara tid.</p>
+      <p class="step-body"><b>Pareto-principen</b>, eller 80/20-regeln, säger att ungefär 20% av dina insatser ger 80% av dina resultat. Den italienske ekonomen Vilfredo Pareto noterade att 20% av befolkningen ägde 80% av marken – och mönstret visade sig stämma överallt.</p>
+      <p class="step-body">För dig som elev innebär det: det finns troligen ett fåtal saker du gör när du pluggar som faktiskt gör skillnad. Resten är aktivitet utan effekt.</p>
+      <p class="step-body">Nyckeln är att identifiera och prioritera de 20% som verkligen spelar roll.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">80% av insatsen</p>
+          <p class="card-body">Läser igenom anteckningar passivt<br>Markerar med överstrykningspenna<br>Skriver rent utan att tänka<br>Tittar på föreläsningar om och om igen</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">20% som ger 80%</p>
+          <p class="card-body">Testar sig själv aktivt<br>Förklarar för någon annan<br>Löser gamla provuppgifter<br>Fokuserar på det man inte kan</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Fem timmar<br>Lite lärande</h1>
+      <p class="step-body">Kim pluggar fem timmar inför ett prov i historia. Hon känner sig nöjd. Men resultatet är sämre än förväntat. Var gick tiden?</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Kims fem timmar</p>
+          <p class="card-body">2 timmar: läser igenom läroboken.<br>1 timme: skriver rent anteckningar snyggt.<br>1 timme: markerar viktiga stycken.<br>30 min: testar sig själv på innehållet.</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Effektivare val</p>
+          <p class="card-body">30 min: läser igenom en gång.<br>2 timmar: testar sig själv utan att titta.<br>1 timme: löser gamla provfrågor.<br>30 min: repeterar det hon inte kunde.</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Kim la mest tid på det som kändes som plugg, men gav minst effekt.</p>
+        <p>Aktivitet är inte detsamma som produktivitet.</p>
+        <p>Fråga dig själv: vilka 20% av det jag gör ger störst effekt?</p>
+      </div>
+    </div>
+
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Vad är den enskilda sak du gör när du pluggar som faktiskt gör störst skillnad för ditt lärande?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Din 80/20-analys</h1>
+      <div class="homework-box">
+        <ol class="homework-list">
+          <li>Ta fram papper och penna.</li>
+          <li>Lista allt du brukar göra när du pluggar inför ett prov.</li>
+          <li>Ringa in de <b>en eller två saker</b> som faktiskt gör störst skillnad – och planera att lägga mer tid på dem nästa gång.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

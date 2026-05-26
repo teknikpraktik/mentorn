@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mål vs system – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Mål vs system</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Mål vs<br>system</h1>
+      <p class="step-body">Alla har mål. Få når dem. Problemet är inte ambition, det är strategin.</p>
+      <p class="step-body">Ett <em>mål</em> är ett resultat du vill uppnå. Ett <em>system</em> är det du gör varje dag
+        för att ta dig dit. Du når inte dina mål genom att vilja dem mer. Du når dem genom vanor som gör framsteg
+        oundvikliga.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Mål</p>
+          <p class="card-body">Fokus på slutpunkten<br>Motivationen varierar<br>Lyckas eller misslyckas<br>Stannar när
+            målet nås</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">System</p>
+          <p class="card-body">Fokus på vardagen<br>Motivationen byggs in<br>Varje dag är en vinst<br>Fortsätter efter
+            målet</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma mål<br>Olika system</h1>
+      <p class="step-body">Zaid och Mira vill klara engelskprovet med högt betyg. De lägger ner lika mycket tid på
+        uppgiften, men deras upplägg är heeelt olika.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Zaid</p>
+          <p class="card-body">Tänker på målet varje dag<br>Pluggar intensivt inför prov<br>Tappar motivationen
+            däremellan<br>Beroende av dagsformen</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Mira</p>
+          <p class="card-body">Lyssnar på engelsk podcast dagligen<br>Skriver tre meningar varje kväll<br>Märker knappt
+            att hon tränar<br>Förbättras konstant</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Zaid vill nå målet. Mira har byggt ett system. <br>Du behöver sannolikt inte mer motivation, du behöver bättre rutiner.
+        </p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Har du ett mål du inte kommit närmare?<br> Hur skulle ett konkret dagligt system kunna se ut?
+      </p>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Designa ditt system</h1>
+      <ol class="homework-list">
+        <li>Skriv ner ett mål du har just nu</li>
+        <li>Fråga AI:
+          <span class="ai-prompt">Mitt mål är [X]. Hjälp mig designa ett dagligt system, en enkel vana jag kan göra
+            varje dag som gör framsteg oundvikliga.</span>
+        </li>
+      </ol>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

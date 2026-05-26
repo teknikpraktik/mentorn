@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second level thinking – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo eyebrow" href="../index.html">mentorn.se</a>
+      <span class="concept-name">Second level thinking</span>
+      <span class="step-counter" id="step-counter">1 / 4</span>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Second level<br>thinking</h1>
+      <p class="step-body">De flesta stannar vid den första tanken. Men det är sällan den bästa.</p>
+      <p class="step-body"><b>First level thinking</b>: "Det här verkar bra, låt oss göra det." Snabbt och ytligt. <b>Second level thinking</b>: "Och sen då? Vad händer om alla tänker likadant? Vad missar jag?"</p>
+      <p class="step-body">Investeraren Howard Marks: om du tänker som alla andra, får du samma resultat som alla andra.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">First level thinking</p>
+          <p class="card-body">"Det här verkar bra."<br>Stannar vid det uppenbara<br>Ser inte konsekvenserna<br>Samma beslut som alla andra</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Second level thinking</p>
+          <p class="card-body">"Och sen då? Vad missar jag?"<br>Frågar efter nästa steg<br>Väger för- och nackdelar<br>Ser vad andra inte ser</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">En enkel<br>fråga</h1>
+      <p class="step-body">Klassen ska välja vilket land de vill skriva om i ett geografiprojekt. De flesta väljer USA eller Japan – populära länder med massor av material.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">First level</p>
+          <p class="card-body">"USA – massor av material."<br>Alla väljer samma länder.<br>Texterna liknar varandra.<br>Svårt att sticka ut.</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Second level</p>
+          <p class="card-body">"Vad händer om alla väljer USA?"<br>"Kanske är ett okänt land bättre?"<br>Väljer ett land ingen annan skriver om.<br>Läraren minns texten.</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Second level thinking handlar inte om att alltid gå mot strömmen.</p>
+        <p>Det handlar om att fråga vad som händer ett steg längre.</p>
+        <p>"Och sen då?" är en av de kraftfullaste frågorna du kan ställa.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Ta ett beslut du nyligen fattat – vad hade hänt om du frågat "och sen då?" en gång till?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Fråga ett steg till</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Ta fram papper och penna.</li>
+          <li>Skriv ner ett beslut du står inför just nu.</li>
+          <li>Skriv ner den uppenbara konsekvensen – och fråga sedan <b>"och sen då?"</b> tre gånger.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

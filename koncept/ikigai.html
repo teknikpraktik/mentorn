@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ikigai – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Ikigai</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Ikigai</h1>
+      <p class="step-body">Vad är meningen med det du gör? Det är en stor fråga, men den är lätt att utforska!</p>
+      <p class="step-body"><em>Ikigai</em> är ett japanskt begrepp och betyder ungefär "anledningen att stiga upp på
+        morgonen." Det beskriver skärningspunkten mellan vad du älskar, vad du är bra på, vad världen behöver och vad du
+        kan försörja dig på.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan riktning</p>
+          <p class="card-body">Gör saker för att andra vill det<br>Vet inte varför du pluggar<br>Saknar motivation på
+            djupet<br>Lever andras liv</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med ikigai</p>
+          <p class="card-body">Förstår vad som driver dig<br>Väljer meningsfulla vägar<br>Orkar mer – det spelar
+            roll<br>Bygger ett liv på egna villkor</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Rätt väg<br>Fel anledning</h1>
+      <p class="step-body">Alicia och Linn läser samhällsprogrammet. Alicia valde det för att föräldrarna tyckte det var
+        bra. Linn valde det för att hon verkligen undrar hur samhällen fungerar.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Alicia</p>
+          <p class="card-body">Klarar sig bra men känner sig tom<br>Vet inte vad hon vill göra sen<br>Motivationen
+            fluktuerar<br>Väljer nästa steg av samma anledning</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Linn</p>
+          <p class="card-body">Pluggar för att hon är nyfiken<br>Kopplar ämnen till vad hon bryr sig om<br>Har en
+            riktning, en kompass<br>Väljer nästa steg med självkännedom</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">Tänk på ditt senaste stora val, linje, kurs eller aktivitet. Vem fattade egentligen det
+        beslutet?</p>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Din ikigai-karta</h1>
+      <ol class="homework-list">
+        <li>Fråga AI:
+          <span class="ai-prompt">Jag ska utforska mitt ikigai. Ställ mig exakt fyra frågor: vad jag älskar att göra,
+            vad jag är bra på, vilka problem eller behov hos andra jag bryr mig om, och vad jag kan tänka mig att
+            försörja mig på. Analysera sedan var skärningspunkten ligger.</span>
+        </li>
+        <li>Rita fyra cirklar som överlappar varandra och fyll i vad du fick fram.</li>
+      </ol>
+
+      <div style="display: flex; justify-content: center;">
+        <svg width="100%" viewBox="0 0 680 560" role="img" style="margin-top: -3rem; max-width: 600px;">
+          <title>Ikigai-diagram</title>
+          <desc>Fyra överlappande cirklar i pastellfärger med synliga ramar.</desc>
+
+          <circle cx="270" cy="225" r="145" fill="#F2EEF8" fill-opacity="0.6" stroke="none" />
+          <circle cx="410" cy="225" r="145" fill="#EAF3F8" fill-opacity="0.6" stroke="none" />
+          <circle cx="270" cy="335" r="145" fill="#EAF5EE" fill-opacity="0.6" stroke="none" />
+          <circle cx="410" cy="335" r="145" fill="#FDF4E7" fill-opacity="0.6" stroke="none" />
+
+          <circle cx="270" cy="225" r="145" fill="none" stroke="#000000" stroke-width="1.5" />
+          <circle cx="410" cy="225" r="145" fill="none" stroke="#000000" stroke-width="1.5" />
+          <circle cx="270" cy="335" r="145" fill="none" stroke="#000000" stroke-width="1.5" />
+          <circle cx="410" cy="335" r="145" fill="none" stroke="#000000" stroke-width="1.5" />
+
+          <text font-family="DM Sans, sans-serif" font-size="19" font-weight="500" x="195" y="165" text-anchor="middle"
+            fill="#1a1a1a">Vad du</text>
+          <text font-family="DM Sans, sans-serif" font-size="19" font-weight="500" x="195" y="187" text-anchor="middle"
+            fill="#1a1a1a">älskar</text>
+
+          <text font-family="DM Sans, sans-serif" font-size="19" font-weight="500" x="485" y="165" text-anchor="middle"
+            fill="#1a1a1a">Vad du är</text>
+          <text font-family="DM Sans, sans-serif" font-size="19" font-weight="500" x="485" y="187" text-anchor="middle"
+            fill="#1a1a1a">bra på</text>
+
+          <text font-family="DM Sans, sans-serif" font-size="19" font-weight="500" x="195" y="395" text-anchor="middle"
+            fill="#1a1a1a">Vad världen</text>
+          <text font-family="DM Sans, sans-serif" font-size="19" font-weight="500" x="195" y="417" text-anchor="middle"
+            fill="#1a1a1a">behöver</text>
+
+          <text font-family="DM Sans, sans-serif" font-size="19" font-weight="500" x="472" y="397" text-anchor="middle"
+            fill="#1a1a1a">Vad du kan</text>
+          <text font-family="DM Sans, sans-serif" font-size="19" font-weight="500" x="472" y="419" text-anchor="middle"
+            fill="#1a1a1a">få betalt för</text>
+
+          <text font-family="Outfit, sans-serif" font-size="22" font-weight="600" x="340" y="286" text-anchor="middle"
+            fill="#1a1a1a">Ikigai</text>
+        </svg>
+      </div>
+
+
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

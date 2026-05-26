@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Pomodoro</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Pomodoro</h1>
+      <p class="step-body">Din hjärna är inte byggd för att fokusera i timmar. Den är byggd för korta, intensiva
+        perioder, följt av återhämtning.</p>
+      <p class="step-body"><em>Pomodoro</em> är enkelt: arbeta <b>fokuserat i 25 minuter</b>, ta sedan <b>5 minuters paus</b>.
+        Under blocket gör du bara en sak. Inga avbrott. Ingen telefon.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan pomodoro</p>
+          <p class="card-body">Jobbar tills fokus tar slut<br>Kollar telefonen konstant<br>Ingen
+            tidsuppfattning<br>Trött, men ändå inte klar</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med pomodoro</p>
+          <p class="card-body">Arbetar i avgränsade block<br>Telefonen borta under blocket<br>Bättre koll på
+            tiden<br>Inbyggda och välförtjänta pauser</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Två timmar<br>Inget gjort</h1>
+      <p class="step-body">Kalle sätter sig vid datorn för att skriva en uppsats. Två timmar senare har han knappt
+        skrivit ett stycke. Inte för att han inte ville, utan för att han saknade struktur.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Kalles kväll</p>
+          <p class="card-body">Kollar Instagram (bara en sekund)<br>Läser samma text om och om igen<br>Börjar om flera
+            gånger<br>Känner sig
+            överväldigad</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med pomodoro</p>
+          <p class="card-body">Sätter timern och skriver inledningen<br>Tar 5 min paus (kort promenad)<br>Startar
+            nästa block direkt<br>Efter två timmar har han kommit långt</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>25 minuter är tillräckligt kort för att komma igång och tillräckligt långt för att få något gjort.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <div class="discussion-layout">
+        <div>
+          <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+        </div>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5"
+                stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+        </div>
+      </div>
+      <p class="discussion-q">1. När tappar du fokus när du pluggar?<br>2. Vad är det som distraherar dig mest då?</p>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Testa pomodoro idag</h1>
+      <ol class="homework-list">
+        <li>Bestäm när du ska testa ett 25-minuterspass idag</li>
+        <li>Bestäm vad du ska jobba med under passet</li>
+        <li>Berätta din plan för din bordsgranne</li>
+      </ol>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+  <script src="../footer.js"></script>
+</body>
+
+</html>

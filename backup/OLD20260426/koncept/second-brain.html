@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second brain – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="../index.html">mentorn.se</a>
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <span class="concept-name">Second brain</span>
+        <span class="step-counter" id="step-counter">1 / 4</span>
+      </div>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Second<br>brain</h1>
+      <p class="step-body">Din hjärna är bra på att tänka – men dålig på att komma ihåg. Du är inte skapad för att lagra idéer. Du är skapad för att bearbeta dem.</p>
+      <p class="step-body">Ett <b>second brain</b> är ett externt system – en anteckningsbok, en app – där du samlar allt som annars tar upp plats i huvudet. Skriv ner allting. Låt systemet minnas.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan second brain</p>
+          <p class="card-body">Glömmer idéer och uppgifter<br>Håller allt i huvudet<br>Känner sig överväldigad<br>Missar viktiga saker</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med second brain</p>
+          <p class="card-body">Fångar allt direkt<br>Hjärnan är fri att tänka<br>Hittar info när du behöver den<br>Ser kopplingar mellan idéer</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Bra idéer<br>som försvinner</h1>
+      <p class="step-body">Hanna och Joel är båda kreativa och får massor av idéer – men deras öden är helt olika.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Hanna</p>
+          <p class="card-body">Får en bra idé i duschen<br>Tänker "det kommer jag ihåg"<br>Glömmer den inom en timme<br>"Det var något..." – men vad?</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Joel</p>
+          <p class="card-body">Har alltid en anteckningsbok nära<br>Skriver ner idén direkt<br>Hittar den månader senare<br>Bygger vidare på gamla idéer</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>En idé du skriver ner är värd mer än tio du glömmer. Systemet är inte det viktiga – att faktiskt använda det är.</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Hur mycket håller du i huvudet just nu – vad skulle hända om du skrev ner alltihop?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Töm hjärnan</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Skriv ner allt du håller i huvudet just nu – uppgifter, oro, idéer, saker du inte vill glömma</li>
+          <li>Öppna Google Docs eller Notes och skapa två sektioner: <em>Göra</em> och <em>Komma ihåg</em></li>
+          <li>Sortera in allt. Systemet är igång.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

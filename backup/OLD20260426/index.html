@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentorn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-index">
+
+  <header class="site-header">
+    <div class="header-inner">
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+
+    <div class="hero">
+      <h1 class="hero-title">
+        <span class="brand">mentorn.se</span>
+        <span class="large">Plugga smartare – inte mer</span>
+      </h1>
+      <p class="hero-desc">
+        Ett komplett mentorsprogram som hjälper dig att prestera bättre, tänka effektivare och utvecklas som människa. Liten insats, oproportionerligt stor effekt.
+      </p>
+      <p class="hero-desc">
+        Tidlösa mentala modeller i kombination med ett konstruktivt sätt att använda AI. Samma verktyg som världens mest framgångsrika människor använder. Nu tillgängliga för dig.
+      </p>
+
+      <div class="meta">
+        <span class="meta-item"><span class="meta-dot"></span>24 mikrolektioner</span>
+        <span class="meta-item"><span class="meta-dot"></span>10-30 min per lektion</span>
+      </div>
+    </div>
+
+    <p class="section-label">Alla lektioner</p>
+
+    <div class="grid" id="grid"></div>
+
+  </div>
+
+  <script>
+    const concepts = [
+      { n: 1,  title: "AI som förstärkare",        file: "koncept/ai-som-forstarkare.html",        hook: "AI är raketen. Du är piloten." },
+      { n: 2,  title: "Pareto-principen",          file: "koncept/pareto-principen.html",          hook: "20% av jobbet ger 80% av resultatet." },
+      { n: 3,  title: "Fixed vs growth mindset",   file: "koncept/fixed-vs-growth-mindset.html",   hook: "Din hjärna är plastisk." },
+      { n: 4,  title: "Pomodoro",                  file: "koncept/pomodoro.html",                  hook: "Få mer gjort, på kortare tid." },
+      { n: 5,  title: "Parkinsons lag",            file: "koncept/parkinsons-lag.html",            hook: "Arbete fyller tiden du ger det." },
+      { n: 6,  title: "Retrieval practice",        file: "koncept/retrieval-practice.html",        hook: "Testa dig själv istället för att läsa mer." },
+      { n: 7,  title: "Feedbackloopar",            file: "koncept/feedbackloopar.html",            hook: "Snabb feedback ger snabb utveckling." },
+      { n: 8,  title: "Deliberate practice",       file: "koncept/deliberate-practice.html",       hook: "Träna smart, inte bara mycket." },
+      { n: 9,  title: "Spaced repetition",         file: "koncept/spaced-repetition.html",         hook: "Minns mer med mindre plugg." },
+      { n: 10, title: "Sunk cost",                 file: "koncept/sunk-cost.html",                 hook: "Sluta vara lojal mot fel saker." },
+      { n: 11, title: "Konsument vs producent",    file: "koncept/konsument-vs-producent.html",    hook: "Skapa mer, scrolla mindre." },
+      { n: 12, title: "Mål vs system",             file: "koncept/mal-vs-system.html",             hook: "Vanor slår mål över tid." },
+      { n: 13, title: "Bottleneck",                file: "koncept/bottleneck.html",                hook: "Hitta det som bromsar dig mest." },
+      { n: 14, title: "Compounding",               file: "koncept/compounding.html",               hook: "Små steg växer över tid." },
+      { n: 15, title: "Alternativkostnad",         file: "koncept/alternativkostnad.html",         hook: "Varje val kostar något annat." },
+      { n: 16, title: "Second brain",              file: "koncept/second-brain.html",              hook: "Sluta lagra allt i huvudet." },
+      { n: 17, title: "Waterfall vs Agile",        file: "koncept/waterfall-vs-agile.html",        hook: "Testa och förbättra istället för att planera perfekt." },
+      { n: 18, title: "Grit",                      file: "koncept/grit.html",                      hook: "Fortsätt även när det är jobbigt." },
+      { n: 19, title: "Second level thinking",     file: "koncept/second-level-thinking.html",     hook: "Tänk ett steg längre än första tanken." },
+      { n: 20, title: "Stress som verktyg",        file: "koncept/stress-som-verktyg.html",        hook: "Rätt stress kan hjälpa dig prestera." },
+      { n: 21, title: "Kroppen som verktyg",       file: "koncept/kroppen-som-verktyg.html",       hook: "Sömn, rörelse och återhämtning är prestation." },
+      { n: 22, title: "Antifragilitet",            file: "koncept/antifragilitet.html",            hook: "Bli starkare av motstånd." },
+      { n: 23, title: "Skin in the game",          file: "koncept/skin-in-the-game.html",          hook: "Ansvar förändrar beteende." },
+      { n: 24, title: "Ikigai",                    file: "koncept/ikigai.html",                    hook: "Hitta riktning och mening i det du gör." }
+    ];
+
+    const grid = document.getElementById("grid");
+
+    concepts.forEach(c => {
+      const a = document.createElement("a");
+      a.className = "concept-card";
+      a.href = c.file;
+      a.innerHTML = `
+        <p class="num">${String(c.n).padStart(2, "0")}</p>
+        <p class="title">${c.title}</p>
+        <p class="hook">${c.hook}</p>
+      `;
+      grid.appendChild(a);
+    });
+  </script>
+  <script src="footer.js"></script>
+</body>
+</html>

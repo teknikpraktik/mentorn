@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternativkostnad – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo eyebrow" href="../index.html">mentorn.se</a>
+      <span class="concept-name">Alternativkostnad</span>
+      <span class="step-counter" id="step-counter">1 / 4</span>
+    </div>
+  </header>
+  <div class="page-wrapper">
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Alternativ-<br>kostnad</h1>
+      <p class="step-body">Varje val du gör kostar något – inte bara pengar, utan tid, energi och möjligheter.</p>
+      <p class="step-body"><b>Alternativkostnad</b> är värdet av det bästa alternativet du väljer bort. Det är inte bara vad du betalar – det är vad du offrar.</p>
+      <p class="step-body">De flesta ser bara vad de vinner med ett val. Kloka beslutsfattare ser också vad de förlorar.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan alternativtänk</p>
+          <p class="card-body">Ser bara det du får<br>Fattar impulsiva beslut<br>Ångrar tid och pengar<br>Förstår inte varför inget förändras</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med alternativtänk</p>
+          <p class="card-body">Ser vad du väljer bort<br>Fattar medvetna val<br>Prioriterar det som spelar roll<br>Förstår värdet av varje timme</p>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">En timme<br>Tre val</h1>
+      <p class="step-body">Wilma har en ledig timme. Hon kan scrolla sociala medier, börja på läxan, eller ta en kort powernap. Hon väljer att scrolla.</p>
+      <p class="step-body">Hon ser det som avkoppling utan kostnad. Men alternativkostnaden är verklig – läxan är inte klar, kvällen inte friare och energin inte påfylld.</p>
+      <p class="step-body">Att inte välja är också ett val.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Vad Wilma ser</p>
+          <p class="card-body">En timme av avkoppling<br>Koll på vad kompisar gör<br>Inget "kostar" henne något<br>Hon väljer utan att tänka</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Alternativkostnaden</p>
+          <p class="card-body">Läxan hade kunnat vara klar<br>Kvällen hade blivit friare<br>En powernap hade gett mer energi<br>Hon hade känt sig mer i kontroll</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Wilmas val var inte fel – men det var ett val med en kostnad hon inte räknade med. Fråga dig: vad offrar jag när jag väljer det här?</p>
+      </div>
+    </div>
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Vad lägger du mest tid på varje dag – och vad är alternativkostnaden för det valet?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Räkna på din tid</h1>
+      <div class="homework-box">
+        <p class="discussion-instruction">Instruktion</p>
+        <ol class="homework-list">
+          <li>Skriv ner hur du spenderar en typisk vardagskväll, timme för timme</li>
+          <li>Skriv bredvid varje aktivitet vad <b>alternativkostnaden</b> är – vad du väljer bort</li>
+        </ol>
+      </div>
+    </div>
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

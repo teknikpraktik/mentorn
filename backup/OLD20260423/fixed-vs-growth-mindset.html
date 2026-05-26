@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed vs growth mindset – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo eyebrow" href="../index.html">mentorn.se</a>
+      <span class="concept-name">Fixed vs growth mindset</span>
+      <span class="step-counter" id="step-counter">1 / 4</span>
+    </div>
+  </header>
+  <div class="page-wrapper">
+
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Fixed vs<br>growth mindset</h1>
+      <p class="step-body">Hur du ser på din egen förmåga avgör hur mycket du utvecklas. Det är inte en metafor – det är vad forskning visar.</p>
+      <p class="step-body">Med ett <b>fixed mindset</b> tror du att dina egenskaper är medfödda och fasta: du är antingen smart eller inte, bra på matte eller inte. Misslyckanden bekräftar din brist.</p>
+      <p class="step-body">Med ett <b>growth mindset</b> tror du att förmågor kan utvecklas genom ansträngning och rätt strategi. Misslyckanden är information – inte domar.</p>
+      <p class="step-body">Psykologen Carol Dweck som myntade begreppen visade att elever med growth mindset presterar bättre över tid – inte för att de är smartare, utan för att de inte ger upp.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Fixed mindset</p>
+          <p class="card-body">"Jag är inte en matteperson."<br>Undviker utmaningar<br>Ger upp vid motgång<br>Ser andras framgång som ett hot</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Growth mindset</p>
+          <p class="card-body">"Jag förstår inte det här <i>ännu</i>."<br>Söker upp utmaningar<br>Ser motgång som feedback<br>Inspireras av andras framgång</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Samma prov<br>Olika reaktion</h1>
+      <p class="step-body">Nora och Felix får tillbaka ett underkänt prov i kemi. De är lika smarta. Men deras reaktioner – och vad som händer sen – är helt olika.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Felix – fixed mindset</p>
+          <p class="card-body">"Jag är helt enkelt inte bra på kemi."<br>Skäms och gömmer undan provet.<br>Minskar sin ansträngning – varför försöka?<br>Resultaten fortsätter sjunka.</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Nora – growth mindset</p>
+          <p class="card-body">"Ok, vad förstod jag inte?"<br>Går igenom felen noggrant.<br>Ber om hjälp med det hon inte förstår.<br>Klarar nästa prov med godkänt.</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Felix och Nora fick samma resultat. Men bara en av dem lärde sig något av det.</p>
+        <p>Ordet "ännu" är kraftfullt: "Jag kan inte det här – <b>ännu</b>."</p>
+        <p>Mindset är inte något du har. Det är något du väljer, gång på gång.</p>
+      </div>
+    </div>
+
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Finns det något ämne eller område där du tänker "det är inte för mig" – och vad tror du händer om du lägger till ordet "ännu" i den meningen?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Byt ett ord</h1>
+      <div class="homework-box">
+        <ol class="homework-list">
+          <li>Ta fram papper och penna.</li>
+          <li>Skriv ner en sak du brukar säga att du "inte kan" eller "inte är bra på".</li>
+          <li>Skriv om meningen och lägg till ordet <b>"ännu"</b> – och skriv sedan ner ett litet steg du kan ta den här veckan.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

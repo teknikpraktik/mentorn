@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bottleneck – Mentorn</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="page-concept">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo eyebrow" href="../index.html">mentorn.se</a>
+      <span class="concept-name">Bottleneck</span>
+      <span class="step-counter" id="step-counter">1 / 4</span>
+    </div>
+  </header>
+  <div class="page-wrapper">
+
+    <div class="step visible" id="step-0">
+      <p class="step-label">Koncept</p>
+      <h1 class="step-title">Bottleneck</h1>
+      <p class="step-body">I varje system finns det en begränsning – ett ställe där allt sackar efter. Det kallas en <b>bottleneck</b>, eller flaskhals.</p>
+      <p class="step-body">Det spelar ingen roll hur bra resten av systemet är. Om du har en flaskhals styr den hela tempot. En fabrik kan ha tio supersnabba maskiner, men om en är långsam bromsar den allt.</p>
+      <p class="step-body">Det gäller även dig. Kanske är du duktig på att förstå – men dålig på att komma igång. Eller bra på att börja – men dålig på att avsluta. Den svagaste länken begränsar hela kedjan.</p>
+      <p class="step-body">Lösningen är inte att bli bättre på allt. Det är att identifiera och åtgärda <b>din specifika flaskhals</b>.</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Utan bottleneck-tänk</p>
+          <p class="card-body">Jobbar på allt lite<br>Ser inte vad som faktiskt bromsar<br>Lägger energi på fel ställe<br>Framstegen uteblir</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Med bottleneck-tänk</p>
+          <p class="card-body">Identifierar den svagaste länken<br>Fokuserar resurser dit<br>Åtgärdar roten till problemet<br>Märker direkt förbättring</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step-1">
+      <p class="step-label">Exempel</p>
+      <h1 class="step-title">Duktig student<br>Dåliga betyg</h1>
+      <p class="step-body">Theo förstår allt på lektionerna. Han är med i diskussioner och klarar muntliga prov utan problem. Men hans skriftliga prov är underkända. Vad är hans bottleneck?</p>
+      <div class="two-col">
+        <div class="card red">
+          <p class="card-label">Theos analys</p>
+          <p class="card-body">"Jag förstår inte ämnet tillräckligt bra."<br>Pluggar mer på innehållet.<br>Resultaten förbättras inte.<br>Missar att problemet är skrivandet.</p>
+        </div>
+        <div class="card green">
+          <p class="card-label">Rätt analys</p>
+          <p class="card-body">Flaskhalsen är skriftlig formulering.<br>Tränar specifikt på att skriva svar.<br>Övar på gamla provfrågor.<br>Betygen lyfter inom en termin.</p>
+        </div>
+      </div>
+      <div class="punch-lines">
+        <p>Theo var redan bra på det han trodde var problemet.</p>
+        <p>Att jobba hårdare på fel sak löser ingenting.</p>
+        <p>Hitta flaskhalsen – och åtgärda just den.</p>
+      </div>
+    </div>
+
+    <div class="step" id="step-2">
+      <p class="step-label">Diskussion i par – 60 sekunder</p>
+      <h1 class="step-title">Diskutera med<br>din bänkgranne</h1>
+      <div class="discussion-block">
+        <p class="discussion-instruction">Fråga</p>
+        <p class="discussion-q">Om du tänker på dina studier som ett system – var är din flaskhals just nu, det som bromsar dig mest?</p>
+        <div class="timer-row">
+          <div class="timer-ring-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="ring-bg" cx="50" cy="50" r="44" />
+              <circle class="ring-fill" id="ring" cx="50" cy="50" r="44" stroke-dasharray="276.5" stroke-dashoffset="0" />
+            </svg>
+            <div class="ring-label" id="ring-label">60</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-btn primary" id="start-btn" onclick="startTimer()">Starta 60 sek diskussion</button>
+            <button class="timer-btn" onclick="resetTimer()">Återställ</button>
+            <p class="timer-status" id="timer-status">Redo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="step" id="step-3">
+      <p class="step-label">Uppgift</p>
+      <h1 class="step-title">Hitta din flaskhals</h1>
+      <div class="homework-box">
+        <ol class="homework-list">
+          <li>Ta fram papper och penna.</li>
+          <li>Skriv ner de fem viktigaste stegen i din studieprocess (t.ex. planera, börja, fokusera, förstå, minnas).</li>
+          <li>Ringa in det steg som är svagast just nu – och skriv ner ett konkret sätt att stärka det.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <div class="nav-right">
+        <button class="nav-btn" id="prev-btn" onclick="navigate(-1)" style="display:none">Tillbaka</button>
+        <button class="nav-btn" id="next-btn" onclick="navigate(1)">Nästa</button>
+      </div>
+    </div>
+  </div>
+  <script src="../timer.js"></script>
+  <script src="../nav.js"></script>
+</body>
+</html>

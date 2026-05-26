@@ -748,9 +748,9 @@ strong {
     padding: 0 1.25rem 3rem;
   }
 
-.page-index .page-wrapper {
-  padding-top: 6rem !important;
-}
+  .page-index .page-wrapper {
+    padding-top: 6rem !important;
+  }
 
   .page-concept .page-wrapper {
     padding-top: 4rem;

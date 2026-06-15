@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mentorn.se/sitemap.xml
+Sitemap: https://mentorn.se/sitemap.xml
